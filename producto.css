@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('https://img.freepik.com/foto-gratis/abstracto-diseno-diseno-fondo-naranja-plantilla-web-estudio-informe-negocios-color-gradiente-circulo-liso_1258-92103.jpg?t=st=1768559068~exp=1768562668~hmac=8943cca0da407d88c021d5fcd594fa6d3c7d9d8ce21a36b891400aaa60096cc1&w=1480');
+  background-size: cover;        /* la imagen cubre todo el fondo */
+  background-position: center;   /* centrada */
+  background-repeat: no-repeat;  /* no se repite */
+  background-attachment: fixed;  /* se mantiene al hacer scroll */
+  font-family: Arial, sans-serif;
+}
+
+/* Logo fijo */
+.company-logo {
+  width: 180px;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+}
+
+/* Centro real de la página */
+.page-center {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Rectángulo blanco centrado */
+.product-wrapper {
+  max-width: 900px;
+  margin: 100px auto 0 auto; 
+  background: #ffffff;
+  padding: 25px;
+  display: flex;
+  gap: 30px;
+  border-radius: 8px;
+}
+
+
+/* ===== Carrusel ===== */
+.carousel-section {
+  width: 50%;
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  height: 350px; 
+  overflow: hidden;
+}
+
+.carousel-slide {
+  display: flex;
+  height: 100%;
+  transition: transform 0.30s ease;
+}
+
+.carousel-slide img {
+  min-width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Botones */
+.prev-btn,
+.next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.6);
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.prev-btn { left: 10px; }
+.next-btn { right: 10px; }
+
+/* Miniaturas en filas de 5 */
+.thumbnails {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 16px;
+  margin-top: 18px;
+  justify-items: center;
+}
+
+.thumb {
+  width: 90px;
+  height: 90px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f5f5f5;
+  border-radius: 6px;
+}
+
+.thumb img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.thumb.active {
+  border-color: #000;
+}
+
+/* ===== Información ===== */
+.info-section {
+  width: 50%;
+}
+
+.back-btn {
+  display: inline-block;
+  background: #e86332;
+  color: white;
+  padding: 10px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-bottom: 18px;
+}
+
+.product-title {
+  color: #000;
+  margin-bottom: 12px;
+}
+
+.colors {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.color {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid #000;
+}
+
+.description {
+  margin: 18px 0;
+  color: #333;
+}
+
+.price {
+  font-size: 22px;
+  font-weight: bold;
+  color: #e86332;
+}
