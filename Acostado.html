@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Detalle del Producto</title>
+  <link rel="stylesheet" href="producto.css">
+</head>
+<body>
+
+  <!-- Logo -->
+  <a href="index.html">
+    <img src="Perfil.png" class="company-logo">
+  </a>
+
+  <div class="product-wrapper">
+
+    <!-- Carrusel lado izquierdo -->
+    <div class="carousel-section">
+      <div class="carousel-container">
+        <button class="prev-btn">&#10094;</button>
+
+        <div class="carousel-slide">
+          <img src="acostado.png">
+          <img src="acostado2.png">
+          <img src="acostado3.png">
+          <img src="acostado4.png">
+        </div>
+
+        <button class="next-btn">&#10095;</button>
+      </div>
+
+      <div class="thumbnails">
+        <img src="acostado.png" class="thumb active">
+        <img src="acostado2.png" class="thumb">
+        <img src="acostado3.png" class="thumb">
+        <img src="acostado4.png" class="thumb">
+      </div>
+    </div>
+
+    <!-- Información lado derecho -->
+    <div class="info-section">
+      <a href="Index.html" onclick="window.close()" class="back-btn">Volver</a>
+
+      <h1 class="product-title">Lámpara Astronauta</h1>
+
+      <div class="color-options">
+        <p>Colores disponibles:</p>
+        <div class="colors">
+          <span class="color" style="background:red"></span>
+          <span class="color" style="background:blue"></span>
+          <span class="color" style="background:rgb(207, 209, 207)"></span>
+        </div>
+      </div>
+
+      <p class="description">
+        Original lámpara de astronauta recostado sobre la luna, perfecta para quienes aman el espacio. Un detalle decorativo único que aporta estilo y una luz agradable a cualquier rincón.
+      </p>
+
+      <p class="price">Precio de Unidad: 190lps</p>
+    </div>
+
+  </div>
+
+  <script src="producto.js"></script>
+</body>
+</html>
