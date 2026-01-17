@@ -3,6 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <title>Detalle del Producto</title>
+
+  <!-- Obligatorio para móvil -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="stylesheet" href="producto.css">
 </head>
 <body>
@@ -12,46 +16,49 @@
     <img src="Perfil.png" class="company-logo">
   </a>
 
-  <div class="product-wrapper">
+  <!-- Contenedor que centra todo -->
+  <div class="page-center">
 
-    <!-- Carrusel lado izquierdo -->
-    <div class="carousel-section">
-      <div class="carousel-container">
-        <button class="prev-btn">&#10094;</button>
+    <div class="product-wrapper">
 
-        <div class="carousel-slide">
-          <img src="osito.png">
-          <img src="osito2.png">
+      <!-- Carrusel lado izquierdo -->
+      <div class="carousel-section">
+        <div class="carousel-container">
+          <button class="prev-btn">&#10094;</button>
+
+          <div class="carousel-slide">
+            <img src="osito.png">
+            <img src="osito2.png">
+          </div>
+
+          <button class="next-btn">&#10095;</button>
         </div>
 
-        <button class="next-btn">&#10095;</button>
+        <div class="thumbnails">
+          <img src="osito.png" class="thumb active">
+          <img src="osito2.png" class="thumb">
+        </div>
       </div>
 
-      <div class="thumbnails">
-        <img src="osito.png" class="thumb active">
-        <img src="osito2.png" class="thumb">
-      </div>
-    </div>
+      <!-- Información lado derecho -->
+      <div class="info-section">
+        <a href="Index.html" class="back-btn">Volver</a>
 
-    <!-- Información lado derecho -->
-    <div class="info-section">
-      <a href="Index.html" onclick="window.close()" class="back-btn">Volver</a>
+        <h1 class="product-title">Ventilador de escritorio</h1>
 
-      <h1 class="product-title">Ventilador de escritorio</h1>
-
-      <div class="color-options">
         <p>Colores disponibles:</p>
         <div class="colors">
           <span class="color" style="background:rgb(186, 49, 245)"></span>
         </div>
+
+        <p class="description">
+          Lámpara decorativa con diseño de astronauta, incluye sacapunta integrado.
+          Ideal para escritorios y regalos.
+        </p>
+
+        <p class="price">Precio de Unidad: 150lps</p>
       </div>
 
-      <p class="description">
-        Lámpara decorativa con diseño de astronauta, incluye sacapunta integrado.
-        Ideal para escritorios y regalos.
-      </p>
-
-      <p class="price">Precio de Unidad: 150lps</p>
     </div>
 
   </div>
