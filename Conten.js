@@ -37,7 +37,7 @@ nameList[7] = 'Set de 24 carritos';
 linkList[7] = 'carritos.html';
 
 imageList[8] = 'cuadradas.png';
-nameList[8] = 'Set de 24 carritos';
+nameList[8] = 'Lampara de Cristal Cuadrada';
 linkList[8] = 'cuadradas.html';
 
 imageList[9] = 'morado.png';
@@ -85,4 +85,5 @@ for (var i = 0; i < imageList.length; i++) {
       '<span class="image-name">' + nameList[i] + '</span>' +
     '</div>';
 }
+
 
