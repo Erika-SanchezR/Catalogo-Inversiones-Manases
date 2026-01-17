@@ -3,60 +3,69 @@
 <head>
   <meta charset="UTF-8">
   <title>Detalle del Producto</title>
+
+  <!-- Obligatorio para móvil -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="stylesheet" href="producto.css">
 </head>
 <body>
 
   <!-- Logo -->
   <a href="index.html">
-    <img src="Perfil.png" class="company-logo">
+    <img src="Perfil.png" class="company-logo" alt="Logo Inversiones Manases">
   </a>
 
-  <div class="product-wrapper">
+  <!-- Contenedor que centra todo -->
+  <div class="page-center">
 
-    <!-- Carrusel lado izquierdo -->
-    <div class="carousel-section">
-      <div class="carousel-container">
-        <button class="prev-btn">&#10094;</button>
+    <div class="product-wrapper">
 
-        <div class="carousel-slide">
-          <img src="bateria1.png">
-          <img src="bateria2.png">
-           <img src="bateria3.png">
+      <!-- Carrusel lado izquierdo -->
+      <div class="carousel-section">
+        <div class="carousel-container">
+          <button class="prev-btn">&#10094;</button>
+
+          <div class="carousel-slide">
+            <img src="bateria1.png">
+            <img src="bateria2.png">
+            <img src="bateria3.png">
             <img src="bateria4.png">
+          </div>
+
+          <button class="next-btn">&#10095;</button>
         </div>
 
-        <button class="next-btn">&#10095;</button>
-      </div>
-
-      <div class="thumbnails">
-        <img src="bateria1.png" class="thumb active">
-        <img src="bateria2.png" class="thumb">
-        <img src="bateria3.png" class="thumb">
-        <img src="bateria4.png" class="thumb">
-      </div>
-    </div>
-
-    <!-- Información lado derecho -->
-    <div class="info-section">
-      <a href="Index.html" onclick="window.close()" class="back-btn">Volver</a>
-
-      <h1 class="product-title">Baterias Portatiles</h1>
-
-      <div class="color-options">
-        <p>Colores disponibles:</p>
-        <div class="colors">
-          <span class="color" style="background:rgb(0, 0, 0)"></span>
-          <span class="color" style="background:rgb(235, 158, 191)"></span>
-          <span class="color" style="background:rgb(242, 243, 242)"></span>
+        <div class="thumbnails">
+          <img src="bateria1.png" class="thumb active">
+          <img src="bateria2.png" class="thumb">
+          <img src="bateria3.png" class="thumb">
+          <img src="bateria4.png" class="thumb">
         </div>
       </div>
 
-      <p class="description">
-        Batería portátil de 30,000 mAh, ideal para mantener tus dispositivos siempre cargados. Su gran capacidad permite múltiples recargas en celulares, tablets y otros dispositivos, perfecta para viajes, trabajo o emergencias. Diseño práctico, resistente y fácil de transportar.
-      </p>
+      <!-- Información lado derecho -->
+      <div class="info-section">
+        <a href="index.html" class="back-btn">Volver</a>
 
-      <p class="price">Precio de Unidad: 350lps</p>
+        <h1 class="product-title">Baterias Portatiles</h1>
+
+        <div class="color-options">
+          <p>Colores disponibles:</p>
+          <div class="colors">
+            <span class="color" style="background:rgb(0, 0, 0)"></span>
+            <span class="color" style="background:rgb(235, 158, 191)"></span>
+            <span class="color" style="background:rgb(242, 243, 242)"></span>
+          </div>
+        </div>
+
+        <p class="description">
+          Batería portátil de 30,000 mAh, ideal para mantener tus dispositivos siempre cargados. Su gran capacidad permite múltiples recargas en celulares, tablets y otros dispositivos, perfecta para viajes, trabajo o emergencias. Diseño práctico, resistente y fácil de transportar.
+        </p>
+
+        <p class="price">Precio de Unidad: 350lps</p>
+      </div>
+
     </div>
 
   </div>
@@ -64,3 +73,5 @@
   <script src="producto.js"></script>
 </body>
 </html>
+
+
