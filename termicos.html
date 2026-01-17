@@ -3,59 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <title>Detalle del Producto</title>
+
+  <!-- Obligatorio para móvil -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="stylesheet" href="producto.css">
 </head>
 <body>
 
   <!-- Logo -->
   <a href="index.html">
-    <img src="Perfil.png" class="company-logo">
+    <img src="Perfil.png" class="company-logo" alt="Logo Inversiones Manases">
   </a>
 
-  <div class="product-wrapper">
+  <!-- Contenedor que centra todo -->
+  <div class="page-center">
 
-    <!-- Carrusel lado izquierdo -->
-    <div class="carousel-section">
-      <div class="carousel-container">
-        <button class="prev-btn">&#10094;</button>
+    <div class="product-wrapper">
 
-        <div class="carousel-slide">
-          <img src="vaso azul.png">
-          <img src="vaso verde.png">
-          <img src="vaso azul2.png">
-          <img src="vaso verde2.png">
+      <!-- Carrusel lado izquierdo -->
+      <div class="carousel-section">
+        <div class="carousel-container">
+          <button class="prev-btn">&#10094;</button>
+
+          <div class="carousel-slide">
+            <img src="vaso azul.png">
+            <img src="vaso verde.png">
+            <img src="vaso azul2.png">
+            <img src="vaso verde2.png">
+          </div>
+
+          <button class="next-btn">&#10095;</button>
         </div>
 
-        <button class="next-btn">&#10095;</button>
-      </div>
-
-      <div class="thumbnails">
-        <img src="vaso azul.png" class="thumb active">
-        <img src="vaso verde.png" class="thumb">
-        <img src="vaso azul2.png" class="thumb">
-        <img src="vaso verde2.png" class="thumb">
-      </div>
-    </div>
-
-    <!-- Información lado derecho -->
-    <div class="info-section">
-      <a href="Index.html" onclick="window.close()" class="back-btn">Volver</a>
-
-      <h1 class="product-title">Vasos Térmicos</h1>
-
-      <div class="color-options">
-        <p>Colores disponibles:</p>
-        <div class="colors">
-          <span class="color" style="background:blue"></span>
-          <span class="color" style="background:green"></span>
+        <div class="thumbnails">
+          <img src="vaso azul.png" class="thumb active">
+          <img src="vaso verde.png" class="thumb">
+          <img src="vaso azul2.png" class="thumb">
+          <img src="vaso verde2.png" class="thumb">
         </div>
       </div>
 
-      <p class="description">
-        Vasos térmicos de alta calidad, diseñados para mantener tus bebidas frías o calientes por más tiempo. Ideales para el uso diario, viajes, oficina o actividades al aire libre. Prácticos, resistentes y con un diseño moderno.
-      </p>
+      <!-- Información lado derecho -->
+      <div class="info-section">
+        <a href="index.html" class="back-btn">Volver</a>
 
-      <p class="price">Precio de Unidad: 180lps</p>
+        <h1 class="product-title">Vasos Térmicos</h1>
+
+        <div class="color-options">
+          <p>Colores disponibles:</p>
+          <div class="colors">
+            <span class="color" style="background:blue"></span>
+            <span class="color" style="background:green"></span>
+          </div>
+        </div>
+
+        <p class="description">
+          Vasos térmicos de alta calidad, diseñados para mantener tus bebidas frías o calientes por más tiempo. Ideales para el uso diario, viajes, oficina o actividades al aire libre. Prácticos, resistentes y con un diseño moderno.
+        </p>
+
+        <p class="price">Precio de Unidad: 180lps</p>
+      </div>
+
     </div>
 
   </div>
@@ -63,3 +72,4 @@
   <script src="producto.js"></script>
 </body>
 </html>
+
