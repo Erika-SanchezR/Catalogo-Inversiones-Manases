@@ -1,43 +1,58 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Inversiones Manases</title>
+<head>
+  <meta charset="UTF-8">
+  <title>Catalogo de Inversiones Manases</title>
 
-    <link rel="stylesheet" href="Colores.css" />
+  <!-- Obligatorio para móvil -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="footer.css" />
+  <link rel="stylesheet" href="Colores.css">
+  <link rel="stylesheet" href="footer.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
-      rel="stylesheet"/>
-  </head>
+  <!-- Logo -->
+  <a href="index.html">
+    <img src="Perfil.png" class="company-logo" alt="Logo Inversiones Manases">
+  </a>
 
-  <body>
-    <div class="container">
-      <img src="Perfil.png" alt="Logo Inversiones Manases" class="company-logo" />
-      <h1 class="page-title">Catalogo de Inversiones Manases</h1>
+  <!-- Contenedor que centra todo -->
+  <div class="page-center">
+
+    <div class="catalog-wrapper">
+
+      <!-- Sección de productos -->
+      <div class="content-container">
+        <!-- Aquí se cargará dinámicamente el contenido de Conten.js -->
+      </div>
+
+      <!-- WhatsApp flotante -->
+      <a href="https://wa.me/50433821331" 
+         class="whatsapp-float" 
+         target="_blank" 
+         aria-label="WhatsApp">
+        <img src="whatsapp.png" alt="WhatsApp">
+      </a>
+
     </div>
 
-    <div class="content-container"></div>
+  </div>
 
-    <script src="Conten.js"></script>
+  <!-- Footer -->
+  <script>
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.body.insertAdjacentHTML('beforeend', data);
+      })
+      .catch(error => console.error('Error al cargar el footer:', error));
+  </script>
 
-    <script>
-      fetch('footer.html')
-        .then(response => response.text())
-        .then(data => {
-          document.body.insertAdjacentHTML('beforeend', data);
-        })
-        .catch(error => console.error('Error al cargar el footer:', error));
-    </script>
+  <script src="Conten.js"></script>
 
-    <a href="https://wa.me/50433821331" 
-   class="whatsapp-float" 
-   target="_blank" 
-   aria-label="WhatsApp">
-  <img src="whatsapp.png" alt="WhatsApp">
-</a>
+</body>
+</html>
 
-  </body>
 
