@@ -3,48 +3,56 @@
 <head>
   <meta charset="UTF-8">
   <title>Detalle del Producto</title>
+
+  <!-- Obligatorio para móvil -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="stylesheet" href="producto.css">
 </head>
 <body>
 
   <!-- Logo -->
   <a href="index.html">
-    <img src="Perfil.png" class="company-logo">
+    <img src="Perfil.png" class="company-logo" alt="Logo Inversiones Manases">
   </a>
 
-  <div class="product-wrapper">
+  <!-- Contenedor que centra todo -->
+  <div class="page-center">
 
-    <!-- Carrusel lado izquierdo -->
-    <div class="carousel-section">
-      <div class="carousel-container">
-        <button class="prev-btn">&#10094;</button>
+    <div class="product-wrapper">
 
-        <div class="carousel-slide">
-          <img src="labubu.png">
-          <img src="labubu2.png">
+      <!-- Carrusel lado izquierdo -->
+      <div class="carousel-section">
+        <div class="carousel-container">
+          <button class="prev-btn">&#10094;</button>
+
+          <div class="carousel-slide">
+            <img src="labubu.png">
+            <img src="labubu2.png">
+          </div>
+
+          <button class="next-btn">&#10095;</button>
         </div>
 
-        <button class="next-btn">&#10095;</button>
+        <div class="thumbnails">
+          <img src="labubu.png" class="thumb active">
+          <img src="labubu2.png" class="thumb">
+        </div>
       </div>
 
-      <div class="thumbnails">
-        <img src="labubu.png" class="thumb active">
-        <img src="labubu2.png" class="thumb">
+      <!-- Información lado derecho -->
+      <div class="info-section">
+        <a href="index.html" class="back-btn">Volver</a>
+
+        <h1 class="product-title">Lámpara Led de Labubu</h1>
+
+        <p class="description">
+          Lámpara LED de Labubu, ideal para decorar y dar un toque divertido a cualquier espacio. Cuenta con cambio de color al tocarle la cabeza, creando una experiencia interactiva y una iluminación suave y agradable.
+        </p>
+
+        <p class="price">Precio de Unidad: 220lps</p>
       </div>
-    </div>
 
-    <!-- Información lado derecho -->
-    <div class="info-section">
-      <a href="Index.html" onclick="window.close()" class="back-btn">Volver</a>
-
-      <h1 class="product-title">Lámpara Led de Labubu</h1>
-
-
-      <p class="description">
-        Lámpara LED de Labubu, ideal para decorar y dar un toque divertido a cualquier espacio. Cuenta con cambio de color al tocarle la cabeza, creando una experiencia interactiva y una iluminación suave y agradable.
-      </p>
-
-      <p class="price">Precio de Unidad: 220lps</p>
     </div>
 
   </div>
@@ -52,3 +60,5 @@
   <script src="producto.js"></script>
 </body>
 </html>
+
+
